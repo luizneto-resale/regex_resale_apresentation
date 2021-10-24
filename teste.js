@@ -1,0 +1,7 @@
+const texto = 'Lista de arquivos mp3: jazz.mp3, rock.mp3, podcast.mp3, blues.mp3'
+
+console.log(texto.match(/.*{,4}\.mp3/g))
+console.log(texto.match(/.p/g))
+
+// no futuro ...
+console.log(texto.match(/\w+\.mp3/g))
