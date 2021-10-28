@@ -3,6 +3,15 @@ O que é Regex?
 - Bem resumido, uma expressão regular (Regex) é um método formal de se especificar um padrão de texto.
 */
 
+// Exemplo de utilidade: - DETALHE LOGICO QUE ESSA REGEX NÃO É A ADEQUADA
+const utilidade = "feat(wallet_property): create a function to avoid gambs: feature/LIGA-99"
+console.log(utilidade.match(/\w+\(\w+\):\s?[\w\s]+:[\s\w]+\/\w+-\d+/g))
+
+// Uso para validar que esse "commit" não bate com o padrão
+const utilidade_error = "feat(wallet_property): create a function to avoid gambs: LIGA-99"
+console.log(utilidade_error.match(/\w+\(\w+\):\s?[\w\s]+:[\s\w]+\/\w+-\d+/g))
+
+
 
 // Como executar uma Regex?
 
